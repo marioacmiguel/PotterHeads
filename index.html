@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
+		
+		<title>PotterHeads</title>
+	</head>
+	<body>  
+		<audio  id="som" src="theme.mp3" type="audio/mp3" />
+			<source  src="theme.mp3" type="audio/mp3" />
+	    </audio>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand active"  href="index.html">PotterHeads</a>
+					<button id="playpause" type="button" name="playButton" class="btn btn-primary btn-lg" onclick="setPlayPause()">On/Off</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+       
+					<li class="dropdown">
+					<a  class="dropdown-toggle" data-toggle="dropdown" href="#">Houses <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+					
+							<li><a style="font-size: 40px; color:rgb(174,0,1) "href="griffindor.html">Gryffindor</a></li>
+							<li><a style="font-size: 40px; color:rgb(26,71,42) "href="slytherin.html">Slytherin</a></li>
+							<li><a style="font-size: 40px; color:rgb(236,185,57) "href="hufflepuff.html">Hufflepuff</a></li>
+							<li><a style="font-size: 40px;color:rgb(34,47,91) "href="ravenclaw.html">RavenClaw</a></li>
+						</ul>
+							
+					</li> 
+					<li> <a href="magicalbeasts.html">Magical Beasts</a></li>
+					<li><a href="magicalitems.html">Magical Items</a></li>
+					<li><a href="spells.html">Spells</a></li>
+					
+					</ul>
+						
+				</div>
+				
+			</div>
+			
+		</nav>
+		
+		
+		<h1> Welcome to Hogwarts! </h1>
+		<img height="420px" width="900px" src="images/dumbledor.jpeg" class="img-circle" alt="dumbledore" id="boxShadow" >
+		<br><br><br>
+		<h2 id="p1"> Here you can learn a little bit more about the magic world!<br>
+		Get to know about the 4 Hogwarts houses, the fantastic creatures and items of this world, and some cool spells!<br>
+		Explore and enjoy!</h2>
+		
+	
+		
+	</body>	
+</html>
+

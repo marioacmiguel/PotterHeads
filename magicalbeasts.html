@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
+		
+		<title>Magical Beasts</title>
+	</head>
+	<body >
+		<audio  id="som">
+			<source src="theme.mp3" type="audio/mp3"/>
+	    </audio>
+		<nav  class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="index.html">PotterHeads</a>
+					<button id="playpause" type="button" name="playButton"  class="btn btn-primary btn-lg" onclick="setPlayPause()">On/Off</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+       
+					<li class="dropdown">
+					<a  class="dropdown-toggle" data-toggle="dropdown" href="#">Houses <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a style="font-size: 40px; color:rgb(174,0,1)" href="griffindor.html">Gryffindor</a></li>
+							<li><a style="font-size: 40px; color:rgb(26,71,42) "href="slytherin.html">Slytherin</a></li>
+							<li><a style="font-size: 40px; color:rgb(236,185,57) "href="hufflepuff.html">Hufflepuff</a></li>
+							<li><a style="font-size: 40px;color:rgb(34,47,91) "href="ravenclaw.html">RavenClaw</a></li>
+						</ul>
+					</li> 
+					<li> <a class="active" href="magicalbeasts.html">Magical Beasts</a></li>
+					<li><a href="magicalitems.html">Magical Items</a></li>
+					<li><a href="spells.html">Spells</a></li>
+					</ul>
+					
+						
+				</div>
+				
+			</div>
+			
+		</nav>
+		
+			
+		
+		<h1> Magical Beasts </h1>
+		<br><br><br>
+		<div class="container-fluid" id="beastsText" >
+			<h2 >This world have a lot of amazing creatures!<br>
+				Come and get to know some of them!
+			</h2>
+			<img src="images/hagrid.png" alt="hagrid">
+			<br>
+			
+				
+			<hr>
+			<div class="container-fluid">
+				<br>
+				<img id="floatleft" style="clear: both;"src="images/beasts/owl.jpg" alt="owl" class="img-rounded">
+				<h3>Owl</h3>
+				<p id="owltext">"Owls are magical creatures most often used for delivering post and parcels in the wizarding world. 
+					They are known for their speed and discretion and can find recipients without an address."
+				</p>
+			</div>
+			<hr>
+			<div class="container-fluid">	
+				<br>
+				<img id="floatright" style="clear: both;"src="images/beasts/hungarianhorntail.jpg" alt="dragon(hungarian horntail)" class="img-rounded">
+				<h3>Dragon (Hungarian Horntail)</h3>
+				<p id="owltext">Dragons are giant winged, fire-breathing reptilian Creatures.
+						Widely regarded as terrifying yet awe-inspiring, they can be found all over the world.
+						Able to fly and breathe fire through their nostrils and mouths, they are one of the most dangerous and hardest to conceal creatures in the wizarding world. 
+						The Ministry of Magic classifies them as XXXXX, known wizard killers that are impossible to train or domesticate. 
+						The one here represented is an Hungarian Horntail, but there are many species.
+				</p>
+			</div>
+			<hr>
+			<div class="container-fluid">
+				<br>
+				<img id="floatleft" style="clear: both;"src="images/beasts/elf.jpg" alt="house-elf" class="img-rounded">
+				<h3>House-Elf</h3>
+				<p id="owltext">House-elves serve wizards and witches and are usually found under the employment of old wizarding families taking residence in elaborate establishments, like mansions, and must do everything that their masters command unless they are freed. 
+					A house-elf can only be freed when their master presents them with clothes.
+					House-elves have their own brand of wandless magic which, despite their small physical size, is very powerful.
+				</p>
+			</div>
+			<hr>
+			<div class="container-fluid">	
+				<br>
+				<img id="floatright" style="clear: both;"src="images/beasts/hipogryf.jpg" alt="hippogriff" class="img-rounded">
+				<h3>Hippogriff</h3>
+				<p id="owltext">A Hippogriff is a magical creature that has the front legs, wings, and head of a giant eagle and the body, hind legs and tail of a horse.
+					  <br>"Half horse, half eagle creatures, immensely proud and extremely dangerous."
+				</p>
+			</div>
+			<hr>
+			<div class="container-fluid">
+				<br>
+				<img id="floatleft" style="clear: both;"src="images/beasts/niffler.jpeg" alt="niffler" class="img-rounded">
+				<h3>Niffler</h3>
+				<p id="owltext">A Niffler is a creature with a long snout and a coat of black, fluffy fur.
+					They are attracted to shiny things, which make them wonderful for locating treasure, but this also means that they could wreak havoc if kept (or set loose) indoors.
+					Nifflers have a pouch on their bellies which held far more than at first seemed possible.
+				</p>
+			</div>
+			<hr>
+				
+			<div class="container-fluid">
+				<br>
+				<img id="floatright" style="clear: both;"src="images/beasts/thestral.jpeg" alt="thestral" class="img-rounded">
+				<h3>Thestral</h3>
+				<p id="owltext"> Thestral is a breed of winged horses with a skeletal body, face with reptilian features, and wide, leathery wings that resemble a bat's.
+					They are very rare, and are considered dangerous by the Ministry of Magic. Thestrals are, undeservedly, known as omens of misfortune and aggression by many wizards because they are visible only to those who have witnessed death at least once or due to their somewhat grim, gaunt and ghostly appearance.
+				</p>
+			</div>
+			<hr>
+			<div class="container-fluid">
+				<br>
+				<img id="monkeyfloatleft" style="clear: both;"src="images/beasts/invisible.png"  class="img-rounded">
+				<h3>Demiguise</h3>
+				<p id="owltext">The Demiguise is a peaceful, herbivorous creature that can make itself invisible and tell the future which makes it very hard to catch.
+					It is found in the Far East, but only wizards and witches trained in their capture can even see them. 
+					It resembles an ape with large, black eyes and long, silky hair.
+				</p>
+				<br>
+				<button type="button" class="btn btn-primary" onclick="monkeyapear()"><b>I want to see it!</b></button>
+					
+			</div>
+			<hr>
+				
+			<div class="container-fluid">
+				<br>
+				<img id="floatright" style="clear: both;"src="images/beasts/occamy.jpeg" alt="occamy" class="img-rounded">
+				<h3>Occamy</h3>
+				<p id="owltext">It is a plumed, two-legged serpentine-bodied creature with wings that reach up to fifteen feet in height.
+						The Occamy is extremely aggressive to anyone who approaches it, and lives off of insects, rats, birds, and  monkeys.
+						It is extremely protective of its eggs, which are made of the most pure and soft silver.
+						It is known to be choranaptyxic, meaning it grows or shranks in order to fit available space.
+				</p>
+			</div>
+			<hr>
+			<div class="container-fluid">
+				<br>
+				<img id="floatleft" style="clear: both;"src="images/beasts/thunderbird.gif" alt="thunderbird summoning stroms" class="img-rounded">
+				<h3>Thunderbird</h3>
+				<p id="owltext">They possess six pairs of powerful wings, and have feathers that shimmer with cloud-like patterns.
+						The Thunderbird can also sense danger and creates storms as it flies.
+				</p>
+			</div>
+			<hr>
+			<div class="container-fluid">
+				<br>
+				<img id="floatright" style="clear: both;"src="images/beasts/phoenix.gif" alt="phoenix bursting" class="img-rounded">
+				<h3>Phoenix</h3>
+				<p id="owltext">As phoenixes approach their Burning Day they resemble a half-plucked turkey.
+							Their eyes become dull, their feathers start to fall out, and it begins to make gagging noises. 
+							Then the bird suddenly bursts into flames only to rise from the ashes shortly after. In a number of days, they grow back to full size.
+							Thanks to this ability, phoenixes live to an immense age.
+				</p>
+			</div>
+			<hr>
+			<div class="container-fluid">
+				<br>
+				<img id="swoopingfloatleft" style="clear: both;"src="images/beasts/swoping/swoping1.png" alt="swooping evil animation" class="img-rounded">
+				<h3>Swooping Evil</h3>
+				<p id="owltext">When it is not flying with its spiked wings, the Swooping Evil shrinks into a green spiny cocoon.
+							It can be quite dangerous, as it is an encephalophage — it feeds on people's brains - and its skin has the ability to deflect at least some spells.
+							It secretes venom that, when properly diluted, can be used to erase bad memories.
+				</p>
+					
+			</div>
+			<hr>
+			<div class="container-fluid">
+				<br>
+				<img id="floatright" style="clear: both;"src="images/beasts/dementor.jpg" alt="dementor" class="img-rounded">
+				<h3>Dementor</h3>
+				<p id="owltext">"Dementors are among the foulest creatures that walk this earth.
+					They infest the darkest, filthiest places, they glory in decay and despair, they drain peace, hope, and happiness out of the air around them...<br> 
+					Get too near a Dementor and every good feeling, every happy memory will be sucked out of you. 
+					If it can, the Dementor will feed on you long enough to reduce you to something like itself... soulless and evil. 
+					You will be left with nothing but the worst experiences of your life."<br>
+					—Remus Lupin's description of Dementors
+				</p>
+			</div>
+			<hr>
+				
+				
+		
+			
+		</div>	
+	</body>	
+
+	<script>
+			
+		function monkeyapear(){
+		
+		document.getElementById('monkeyfloatleft').src = "images/beasts/demiguise.png";
+		document.getElementById('monkeyfloatleft').alt= "demiguise";
+		
+		}
+		
+		
+		//Fonte do código abaixo https://stackoverflow.com/questions/40929607/change-image-on-timer
+		
+		
+		 var image=document.getElementById("swoopingfloatleft");
+            var currentPos = 0;
+            var images = ["images/beasts/swoping/swoping1.png","images/beasts/swoping/swoping2.png","images/beasts/swoping/swoping3.png",
+			"images/beasts/swoping/swoping4.png","images/beasts/swoping/swoping5.jpg"];
+
+            function swoopinggif() {
+                if (++currentPos >= images.length) currentPos = 0;
+                image.src = images[currentPos];
+            }
+
+            setInterval(swoopinggif, 400);
+			
+			
+			$(document).ready(function() {
+		$('floatright').jqFloat();
+	});
+		
+	</script>
+		
+		
+
+	
+</html>

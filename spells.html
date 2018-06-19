@@ -1,0 +1,233 @@
+<!DOCTYPE html >
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
+		
+		<title>Spells</title>
+	</head>
+	<body >
+		<audio  id="som">
+			<source src="theme.mp3" type="audio/mp3"/>
+	    </audio>
+		<nav  class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="index.html">PotterHeads</a>
+					<button id="playpause" type="button" name="playButton"  class="btn btn-primary btn-lg" onclick="setPlayPause()">On/Off</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+       
+					<li class="dropdown">
+					<a  class="dropdown-toggle" data-toggle="dropdown" href="#">Houses <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a style="font-size: 40px; color:rgb(174,0,1)" href="griffindor.html">Gryffindor</a></li>
+							<li><a style="font-size: 40px; color:rgb(26,71,42) "href="slytherin.html">Slytherin</a></li>
+							<li><a style="font-size: 40px; color:rgb(236,185,57) "href="hufflepuff.html">Hufflepuff</a></li>
+							<li><a style="font-size: 40px;color:rgb(34,47,91) "href="ravenclaw.html">RavenClaw</a></li>
+						</ul>
+					</li> 
+					<li> <a href="magicalbeasts.html">Magical Beasts</a></li>
+					<li><a  href="magicalitems.html">Magical Items</a></li>
+					<li><a class="active" href="spells.html">Spells</a></li>
+					</ul>
+					
+						
+				</div>
+				
+			</div>
+			
+		</nav>
+		
+			
+		
+		<h1> Spells </h1>
+		<br><br><br>
+		<div class="container-fluid" id="beastsText" >
+			<h2>Hello, my name is Albus Dumbledor, i'm the director of Hogwarts. So you want to learn some spells? I see...
+			I will leave you whit some of my students, i'm sure they will be able to teach you some nice spells.
+			
+				
+			</h2>
+			<img src="images/dumbledor.png" alt="snape" >
+			<br>
+			
+				
+				<hr>
+				<div class="container-fluid">
+					<br>
+						<h3>Harry Potter</h3>
+					<img id="harryfloatleft" style="clear: both; margin-right:50px;	" src="images/harryglasses.png" alt="harry whit dirty glasses" class="img-rounded" >
+					
+					<p id="harrytext">Hi, my name is Harry, you might have notice that my glasses are a mess, but that makes a perfect oportunity for you to try an easy but very usefull spell,
+					its called <i>"Oculus Reparo"</i>, and it fixes and cleans glasses in a blink. Why dont you try it?
+					</p>
+					
+					<button type="button" class="btn btn-primary" id="harrybutton"  onclick="glasses(), hideharrybuttom()"><b><i>Oculus reparo!</i></b></button>
+				</div>
+			    <hr>
+				<div class="container-fluid">	
+				    <br>
+					<h3>Hermione Granger</h3>
+					<img   id="hermionefloatleft" style="clear: both; margin-right:50px;" src="images/hermione.png" alt="Hermione" >
+					
+								
+					
+					<p id="hermionetext">
+						Hi, my name is Hermione, im going to teach you a spells called <i>"Wingardium Leviosa"</i>, it is used to levitate objects, is one off the first spells young wizards and witches learn
+						but it can be pretty usefull, why dont you try it by levitating that feather over there?
+					</p>
+					<img id="featherfloatright" style="clear: both;" src="images/feather.png" alt="feather">	
+					<button type="button" class="btn btn-primary" id="hermionebutton"  onclick="leviosa()"><b><i>Wingardium Leviosahhh!</i></b></button>
+
+				
+				</div>
+				<hr>
+				<div class="container-fluid">
+					<br>
+				
+					
+					
+					<h3>Ron Weasley</h3>
+					<img id="ronfloatright" style="clear: both; margin-right:50px;"src="images/ron.png" alt="Ron" class="img-rounded">
+					<p id="rontext">Hi, my name is Ron, do you like to buy batteries for your flashlight? yeah.. no one does. But you know what? there's a charm that turns your wand into a flashlight! Whit no batteries!
+					The charm´s name is <i>"Lumus"</i>. You can then use the couter-charm <i>"Nox"</i> to turn off the light.
+					<img id="wandfloatleft" style="clear: both; " src="images/wand.png" alt="wand" >
+					</p>
+					<button type="button" class="btn btn-primary" id="ronbutton"  onclick="lumus()"><b><i>Lumus<i></b></button>
+				</div>
+				<hr>
+				
+				
+				
+		
+			
+		</div>	
+
+	</body>	
+
+		<script>
+		
+		
+		//Todo o codigo abaixo foi baseado em conteudos aprendidos nas aulas e no seguinte exemplo da w3schools link https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_animate_3
+		
+		
+		function hideharrybuttom() {
+    var x = document.getElementById("harrybutton");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none"
+    }
+	}	
+				
+		function glasses(){
+		
+		document.getElementById('harryfloatleft').src = "images/harry.png";
+		document.getElementById("harrytext").innerHTML ="Well done, you got it first time, they look like new!";
+		document.getElementById("harryfloatleft").alt="harry whit clean glasses";
+		
+		}
+		
+	
+	
+        function hidehermionebuttom() {
+    var x = document.getElementById("hermionebutton");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none"
+    }
+	}	
+	
+    	
+		function feather() {
+  var elem = document.getElementById("featherfloatright");   
+  var pos = 300;
+  var id = setInterval(frame, 15);
+  function frame() {
+    if (pos == 0) {
+      clearInterval(id);
+    } else {
+      pos--; 
+      elem.style.marginTop = pos + 'px'; 
+  
+      
+    }
+  }
+}
+   
+   
+    var x = 1;
+			
+		function leviosa()
+		{
+			
+		
+			if(x==1)
+			{
+			
+				document.getElementById("hermionetext").innerHTML = 'No no no, you have to pronouce it right, its <i>"wingardium leviosa"</i>, not "wingardium leviosahhh!"<br>Come on try it again!';
+				document.getElementById("hermionebutton").innerHTML = "<b><i>Wingardium Leviosa</i></b>";
+				
+                x = 2;				
+	
+			}
+			else
+			{	
+			
+				document.getElementById("hermionetext").innerHTML = " That's it! Well done! ";
+				feather();
+				hidehermionebuttom();
+		        
+			}
+		
+		}
+		
+		
+	     y = 1;
+		
+		function lumus()
+		{
+			if(document.getElementById('wandfloatleft').src.match("wand")){
+				document.getElementById('wandfloatleft').src = "images/light.png";
+					document.getElementById("ronbutton").innerHTML = '<b><i>Nox</i></b>';
+				
+				
+
+        }else{
+		
+			document.getElementById('wandfloatleft').src = "images/wand.png";
+			document.getElementById("ronbutton").innerHTML = '<b><i>Lumus</i></b>';
+		
+		
+		}
+				
+               			
+		}
+		
+	
+		
+		
+   
+  
+	
+		
+		</script>
+		
+		
+
+	
+</html>
+

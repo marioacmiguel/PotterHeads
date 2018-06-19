@@ -1,0 +1,126 @@
+<!DOCTYPE html >
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
+		
+		<title>Magical Items</title>
+	</head>
+	<body >
+		<audio  id="som">
+			<source src="theme.mp3" type="audio/mp3"/>
+	    </audio>
+		<nav  class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="index.html">PotterHeads</a>
+					<button id="playpause" type="button" name="playButton"  class="btn btn-primary btn-lg" onclick="setPlayPause()">On/Off</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+       
+					<li class="dropdown">
+					<a  class="dropdown-toggle" data-toggle="dropdown" href="#">Houses <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a style="font-size: 40px; color:rgb(174,0,1)" href="griffindor.html">Gryffindor</a></li>
+							<li><a style="font-size: 40px; color:rgb(26,71,42) "href="slytherin.html">Slytherin</a></li>
+							<li><a style="font-size: 40px; color:rgb(236,185,57) "href="hufflepuff.html">Hufflepuff</a></li>
+							<li><a style="font-size: 40px;color:rgb(34,47,91) "href="ravenclaw.html">RavenClaw</a></li>
+						</ul>
+					</li> 
+					<li> <a href="magicalbeasts.html">Magical Beasts</a></li>
+					<li><a class="active" href="magicalitems.html">Magical Items</a></li>
+					<li><a href="spells.html">Spells</a></li>
+					</ul>
+					
+						
+				</div>
+				
+			</div>
+			
+		</nav>
+		
+			
+		
+		<h1> Magical Items </h1>
+		<br><br><br>
+		<div class="container-fluid" id="beastsText" >
+			<h2 >This world have a lot of usefull and amazing tools <br>
+				Come and get to see some of them!
+			</h2>
+			<img src="images/snape.png" alt="snape" >
+			<br>
+			
+				
+			<hr>
+			<div class="container-fluid">
+				<br>
+				<img id="floatleft" style="clear: both;"src="images/items/wand.jpg" alt="wand" class="img-rounded">
+				<h3>Wand</h3>
+				<p id="owltext">A wand is a magical instrument through which a witch or wizard channels her or his magical powers to centralise the effects for more complex results. 
+					Most spells are done with the aid of wands, but spells can be cast without the use of them. 
+					Wandless magic is, however, very difficult and requires much concentration and incredible skill.
+				</p>
+			</div>
+			<hr>
+			<div class="container-fluid">	
+				<br>
+				<img id="floatright" style="clear: both; margin-bottom: 10px;" src="images/items/maraudersmap.gif" alt="Marauder´s map" class="img-rounded">	
+				<h3>Marauder's map</h3>
+				<p id="owltext">
+					The Marauder's Map is a magical document that reveals all of Hogwarts School. 
+					It shows all secret passages and the location of every person.
+					It is also capable of accurately identifying each person, and is not fooled by <a href="http://harrypotter.wikia.com/wiki/Animagus" target="_blank">animagi</a>,
+					<a href="http://harrypotter.wikia.com/wiki/Polyjuice_Potion" target="_blank">polyjuice potions</a>, or invisibility cloaks, even the Hogwarts ghosts are not exempt from this.
+					It appears to be a blank piece of parchment unless activated by the phrase:<br>
+					"I solemnly swear that I am up to no good".
+				</p>
+			</div>
+			<hr>
+			<div class="container-fluid">
+				<br>
+				<img id="floatleft" style="clear: both;"src="images/items/broom.jpg" alt="wizards whit brooms" class="img-rounded">
+				<h3>Broomsticks</h3>
+				<p id="owltext">Broomsticks, also known as brooms, are one of the means employed by wizards and witches to transport themselves flying between locations. 
+						Broomsticks have various magical spells cast on them to help with riding and flying. 
+						Over time these spells have gone from being simple, to being more complex in nature.
+						They are used in some wizard sports sutch as <a href="http://harrypotter.wikia.com/wiki/Quidditch" target="_blank">Quidditch</a>.
+						
+				</p>
+			</div>
+			<hr>
+			<div class="container-fluid">
+				<br>
+				<img id="floatright" style="clear: both;"src="images/items/pensieve.jpg" alt="pensieve" class="img-rounded">
+				<h3>Pensieve</h3>
+				<p id="owltext">The Pensieve is an object used to review memories.
+					Memories can then be viewed from a non-participant, third-person point of view.
+					Owing to the highly personal nature of extracted memories, and the potential for abuse, most Pensieves are entombed with their owners along with the memories they contain. 
+					Some witches and wizards will pass on their pensive/memories to another person.
+				</p>	
+			</div>
+			<hr>
+			<div class="container-fluid">
+				<h3> The Deathly Hallows </h3>
+				<!-- https://avexdesigns.com/responsive-youtube-embed/ -->
+				<div class="video-container"><iframe width="853" height="480" src="https://www.youtube.com/embed/TgmEEDyeDv8?start=71" frameborder="0" allowfullscreen></iframe></div>
+			</div>
+			<hr>
+				
+				
+		
+			
+		</div>	
+
+	</body>	
+</html>
